@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>vue练习</title>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+ <script language="JavaScript"  src="vue_new.js"></script>
+
+</head>
+<body>
+ 
+
+
+<div id="app-3">
+	<p v-if="seen">我现在在学习哦...</p>
+</div>
+
+
+<div id="app-4">
+	
+	
+	
+<ol>
+<li v-for="todo in todos">
+		{{todo.text}}
+	</li>
+
+</ol>
+</div>
+
+
+<div id="app-5">
+	<p>{{message}}</p>
+	<button v-on:click="reverseMessage">点击反过来哦！</button>
+</div>
+
+<div id="app-6">
+	<p>{{message}}</p>
+	<input v-model="message" />
+	
+	
+</div>
+
+<div id="app-7">
+	<ol>
+		<todo-item v-for="item in groceryList"
+			v-bind:todo="item" v-bind:key="item.id">
+			
+			
+		</todo-item>
+		
+		
+	</ol>
+	
+	
+	
+</div>
+
+
+
+
+
+
+ 
+<script language="JavaScript">
+	
+	
+
+	
+</script>
+
+ 
+ 
+</body>
+</html>
